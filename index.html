@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClimateFacts — historic climate, made clear</title>
+  <meta name="description" content="Explore historic climate by place and month. Compare temperature, rainfall, daylight and confidence with transparent evidence.">
+  <meta name="theme-color" content="#123b36">
+  <meta property="og:title" content="ClimateFacts — historic climate, made clear">
+  <meta property="og:description" content="Place-by-month climate evidence for better travel decisions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://climate99.com/">
+  <link rel="canonical" href="https://climate99.com/">
+  <meta name="twitter:card" content="summary">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-12T7NZCTNL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-12T7NZCTNL',{anonymize_ip:true});</script>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ClimateFacts home"><span class="brand-mark" aria-hidden="true">≈</span><span>Climate<span class="brand-accent">Facts</span></span></a>
+    <nav aria-label="Primary navigation"><a href="#explore">Explore</a><a href="#compare">Compare</a><a href="#method">Method</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy"><p class="eyebrow">Historic climate, made clear</p><h1>Choose a place.<br><em>See its season.</em></h1><p class="hero-lede">A calm, evidence-led way to understand what a month is usually like — before you book, move or compare.</p></div>
+      <div class="lookup-card" id="explore">
+        <div class="card-kicker">Start with a question</div>
+        <label for="place">Where do you want to look?</label>
+        <div class="input-row"><div class="text-input"><span aria-hidden="true">⌖</span><input id="place" value="Lisbon, Portugal" autocomplete="off"></div><button class="primary" id="look-up" type="button">Show climate <span aria-hidden="true">→</span></button></div>
+        <div class="month-row"><span>For</span><button class="month active" type="button">May</button><button class="month" type="button">June</button><button class="month" type="button">September</button><button class="month" type="button" id="month-more">Other month⌄</button></div>
+        <p class="helper">Historic normals are not a forecast. We show the period and coverage with every answer.</p>
+      </div>
+    </section>
+
+    <section class="answer-section" aria-labelledby="answer-title">
+      <div class="section-intro"><div><p class="eyebrow">Your climate answer</p><h2 id="answer-title">Lisbon in May</h2><p class="muted">A warm, fairly dry month with long days and a dependable start to summer.</p></div><div class="status-pill"><span class="dot"></span> Evidence available</div></div>
+      <div class="answer-grid">
+        <article class="main-evidence"><div class="big-number">22<span>°C</span></div><p class="big-label">Typical daytime high</p><div class="range-line"><span>Average low <strong>14°C</strong></span><span>Average high <strong>22°C</strong></span></div><div class="climate-bars" aria-label="Average daytime high by week: 20, 21, 22 and 23 degrees Celsius"><i style="height:57%"><b>20°</b></i><i style="height:70%"><b>21°</b></i><i style="height:84%"><b>22°</b></i><i style="height:92%"><b>23°</b></i></div><div class="chart-axis"><span>early May</span><span>late May</span></div><table class="sr-only"><caption>Typical daytime high through May in Lisbon</caption><thead><tr><th scope="col">Period</th><th scope="col">Temperature</th></tr></thead><tbody><tr><td>Early May</td><td>20°C</td></tr><tr><td>First half</td><td>21°C</td></tr><tr><td>Second half</td><td>22°C</td></tr><tr><td>Late May</td><td>23°C</td></tr></tbody></table><p class="chart-note">Typical daytime highs rise gradually through the month. This is a historical pattern, not a prediction.</p></article>
+        <div class="metric-stack">
+          <div class="metric"><span class="metric-icon rain">☂</span><div><strong>34 mm</strong><small>Monthly rainfall</small></div><span class="tag good">Lower than most</span></div>
+          <div class="metric"><span class="metric-icon sun">◒</span><div><strong>14.3 hrs</strong><small>Daylight at month end</small></div><span class="tag good">Long days</span></div>
+          <div class="metric"><span class="metric-icon sea">≈</span><div><strong>18°C</strong><small>Typical sea temperature</small></div><span class="tag neutral">Modelled range</span></div>
+        </div>
+      </div>
+      <div class="evidence-meta"><span><b>Source</b> IPMA climate normals</span><span><b>Period</b> 1991–2020</span><span><b>Checked</b> 24 Aug 2026</span><span><b>Coverage</b> 29 of 30 years</span><button class="text-button" id="show-detail" type="button">How we know →</button></div>
+    </section>
+
+    <section class="compare-section" id="compare" aria-labelledby="compare-title"><div class="section-intro"><div><p class="eyebrow">Make the decision easier</p><h2 id="compare-title">Compare the same month elsewhere</h2><p class="muted">Places with a similar May feel, ranked by the evidence we hold.</p></div><a class="outline-button" href="#browse">Browse all places →</a></div><div class="compare-table" role="table" aria-label="May climate comparison"><div class="table-row table-head" role="row"><span>Place</span><span>Day high</span><span>Rain</span><span>Dry-day reliability</span><span></span></div><div class="table-row" role="row"><strong>Lisbon <small>Portugal</small></strong><span>22°C</span><span>34 mm</span><span class="reliability"><i style="width:82%"></i><b>82%</b></span><button class="row-action" type="button">Selected</button></div><div class="table-row" role="row"><strong>Valencia <small>Spain</small></strong><span>24°C</span><span>28 mm</span><span class="reliability"><i style="width:88%"></i><b>88%</b></span><button class="row-action link-action" type="button">View</button></div><div class="table-row" role="row"><strong>Porto <small>Portugal</small></strong><span>20°C</span><span>91 mm</span><span class="reliability"><i style="width:61%"></i><b>61%</b></span><button class="row-action link-action" type="button">View</button></div></div><p class="table-foot">Similarity uses temperature, rainfall and dry-day reliability. It is not a recommendation or a promise of good weather.</p></section>
+
+    <section class="browse-section" id="browse" aria-labelledby="browse-title"><div class="browse-heading"><div><p class="eyebrow">Start somewhere else</p><h2 id="browse-title">Browse by climate question</h2></div><p class="muted">Use the evidence to find a month or place that fits.</p></div><div class="question-grid"><button type="button" class="question-card"><span>☀</span><strong>Where is warm in May?</strong><small>Find places by temperature range</small><b>→</b></button><button type="button" class="question-card"><span>⌁</span><strong>Where is rain reliable?</strong><small>Explore dry-day confidence</small><b>→</b></button><button type="button" class="question-card"><span>◌</span><strong>What feels like Lisbon?</strong><small>Compare seasonal patterns</small><b>→</b></button></div></section>
+
+    <section class="method-section" id="method" aria-labelledby="method-title"><div><p class="eyebrow">Open about the evidence</p><h2 id="method-title">Clear answers need clear boundaries.</h2><p>ClimateFacts summarises long-run historical observations. We do not show live weather, forecasts, crowds or prices. Where the record is incomplete, we say so.</p><button class="outline-button" id="details-button" type="button">Read the method <span>＋</span></button></div><div class="method-list"><div><b>01</b><span><strong>Observed</strong><small>Values come from a named climate source.</small></span></div><div><b>02</b><span><strong>Calculated</strong><small>Derived measures show their recipe and inputs.</small></span></div><div><b>03</b><span><strong>Uncertain</strong><small>Missing years and station fit stay visible.</small></span></div></div></section>
+    <section class="share-strip"><div><span class="share-icon">↗</span><strong>Useful? Send this answer to someone planning May.</strong><small>Share a clean link with the evidence attached.</small></div><button class="primary" data-share type="button">Share this answer</button><button class="outline-button" id="copy-link" type="button">Copy link</button><span class="copy-status" aria-live="polite"></span></section>
+  </main>
+  <footer><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">≈</span><span>Climate<span class="brand-accent">Facts</span></span></a><p>Historic climate for real-world decisions.</p></div><div><b>Explore</b><a href="#explore">Place & month</a><a href="#compare">Compare places</a><a href="#browse">Browse questions</a></div><div><b>Trust</b><a href="#method">Methodology</a><a href="#method">Sources & coverage</a><a href="#method">Corrections</a></div><div><b>ClimateFacts</b><span>Built for clarity, not certainty.</span><span>© 2026 ClimateFacts</span></div></footer>
+  <dialog id="detail-dialog"><button class="dialog-close" aria-label="Close" type="button">×</button><p class="eyebrow">Evidence detail</p><h2>How we know</h2><p>Lisbon's May summary is based on monthly climate normals from IPMA, using the 1991–2020 reference period. The chart is a simple representation of the observed month-level pattern.</p><dl><dt>Station match</dt><dd>Lisboa / Geofísico — 3.4 km from city centre</dd><dt>Missing coverage</dt><dd>1998 not available; averages use 29 observed years</dd><dt>Uncertainty</dt><dd>Typical values vary by location, elevation and individual year.</dd></dl></dialog>
+  <script>const months=[...document.querySelectorAll('.month')];months.forEach(m=>m.addEventListener('click',()=>{months.forEach(x=>x.classList.remove('active'));m.classList.add('active');}));document.querySelector('#look-up').addEventListener('click',()=>document.querySelector('.answer-section').scrollIntoView({behavior:'smooth'}));const d=document.querySelector('#detail-dialog');document.querySelector('#show-detail').onclick=()=>d.showModal();document.querySelector('#details-button').onclick=()=>d.showModal();document.querySelector('.dialog-close').onclick=()=>d.close();document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{if(navigator.share){try{await navigator.share({title:document.title,text:'Lisbon in May — historic climate evidence',url:location.href})}catch(e){}}else{navigator.clipboard?.writeText(location.href);alert('Link copied to your clipboard.')}});document.querySelector('#copy-link').onclick=async()=>{await navigator.clipboard?.writeText(location.href);document.querySelector('.copy-status').textContent='Copied';setTimeout(()=>document.querySelector('.copy-status').textContent='',1800)};</script>
+</body></html>

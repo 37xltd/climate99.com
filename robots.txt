@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://climate99.com/sitemap.xml
