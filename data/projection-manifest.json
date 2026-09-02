@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "product": "climate99",
+  "publicationStatus": "approved",
+  "publicProjection": true,
+  "generatedAt": "2026-09-02T06:11:18.176Z",
+  "entityCount": 213,
+  "minimumMeasuresPerEntity": 4,
+  "geography": "World Bank countries matched to OurAirports country reference",
+  "intendedUse": "country-level climate and environmental context pages",
+  "personalDataPolicy": "aggregate-only; no personal data",
+  "approvedFields": [
+    "country identifiers",
+    "country name",
+    "continent",
+    "indicator value",
+    "indicator year",
+    "indicator unit",
+    "derived CO2 per person"
+  ],
+  "sources": [
+    {
+      "publisher": "World Bank",
+      "licence": "World Bank Dataset Terms; governed imports record CC BY 4.0 unless separately labelled",
+      "url": "https://data.worldbank.org/"
+    },
+    {
+      "publisher": "OurAirports",
+      "licence": "Public domain",
+      "url": "https://ourairports.com/data/"
+    }
+  ],
+  "exclusions": [
+    "live weather",
+    "forecasts",
+    "city claims",
+    "personal exposure",
+    "countries with fewer than four measures"
+  ],
+  "files": {
+    "country-climate-context.json": {
+      "sha256": "619c58647d867949ef424164cbdfa8bb8fbd642db48c7bb8b72c91844299dfb6",
+      "bytes": 222114
+    }
+  }
+}
