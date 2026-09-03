@@ -21,3 +21,13 @@ The generator creates the homepage, country pages, sitemap, public data projecti
 ## Deployment
 
 Deploy the site root to Cloudflare Pages project `climate99`. The governed public projection is stored in `atlas-raw` under `public-projections/climate99/`.
+
+## Explorer build and checks
+
+The public projection powers 213 country evidence pages, eight crawlable metric rankings, a five-country comparison chart and a Natural Earth map. Values retain their individual observation years; the tools do not imply live weather or aligned time series.
+
+```sh
+npm ci
+npm run build:explorer
+npm test
+```

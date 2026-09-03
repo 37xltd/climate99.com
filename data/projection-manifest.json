@@ -3,7 +3,7 @@
   "product": "climate99",
   "publicationStatus": "approved",
   "publicProjection": true,
-  "generatedAt": "2026-09-02T06:16:30.313Z",
+  "generatedAt": "2026-09-03T18:10:24.843Z",
   "entityCount": 213,
   "minimumMeasuresPerEntity": 4,
   "geography": "World Bank countries matched to OurAirports country reference",
@@ -28,6 +28,12 @@
       "publisher": "OurAirports",
       "licence": "Public domain",
       "url": "https://ourairports.com/data/"
+    },
+    {
+      "publisher": "Natural Earth",
+      "licence": "Public domain",
+      "url": "https://www.naturalearthdata.com/",
+      "use": "Generalised country boundaries for visual navigation only"
     }
   ],
   "exclusions": [
@@ -42,5 +48,12 @@
       "sha256": "619c58647d867949ef424164cbdfa8bb8fbd642db48c7bb8b72c91844299dfb6",
       "bytes": 222114
     }
+  },
+  "publicInterfaces": {
+    "countryPages": 213,
+    "metricRankingPages": 8,
+    "interactiveComparison": true,
+    "interactiveMap": true,
+    "mapBoundaryScale": "Natural Earth 1:110m"
   }
 }
