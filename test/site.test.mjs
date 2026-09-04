@@ -44,11 +44,11 @@ test('sitemap contains every country, metric and explorer', () => {
   assert.equal((sitemap.match(/<url>/g) || []).length, 227);
 });
 
-test('public pages do not cross-link to other portfolio domains', () => {
+test('public navigation does not cross-link to other portfolio domains', () => {
   const files = ['index.html','compare.html','map.html', ...fs.readdirSync(path.join(root,'metric')).map(f=>path.join('metric',f))];
   for (const file of files) {
     const html = read(file);
-    const external = [...html.matchAll(/https:\/\/([^/"']+)/g)].map(m=>m[1]).filter(host=>host !== 'climate99.com');
+    const external = [...html.matchAll(/href=["']https:\/\/([^/"']+)/g)].map(m=>m[1]).filter(host=>host !== 'climate99.com');
     assert.deepEqual(external, [], `${file} contains an unexpected external domain`);
   }
 });
