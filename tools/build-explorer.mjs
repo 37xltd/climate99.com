@@ -78,6 +78,39 @@ for (const c of countries) {
   fs.writeFileSync(file, html);
 }
 
+const addDatasetSchema = (fileName, schema) => {
+  const file = path.join(root, fileName);
+  let html = fs.readFileSync(file, 'utf8');
+  if (html.includes('type="application/ld+json"')) return;
+  const json = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Dataset', ...schema }).replace(/</g, '\\u003c');
+  html = html.replace('</head>', `<script type="application/ld+json">${json}</script></head>`);
+  fs.writeFileSync(file, html);
+};
+
+addDatasetSchema('uk-solar-deployment.html', {
+  name: 'UK solar deployment trend',
+  description: 'Official UK solar photovoltaic deployment series from 2010 to July 2026.',
+  url: 'https://climate99.com/uk-solar-deployment',
+  dateModified: '2026-09-03',
+  temporalCoverage: '2010/2026-07',
+  spatialCoverage: 'United Kingdom',
+  creator: { '@type': 'GovernmentOrganization', name: 'Department for Energy Security and Net Zero' },
+  license: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/',
+  isPartOf: { '@type': 'WebSite', name: 'Climate99', url: 'https://climate99.com/' },
+});
+
+addDatasetSchema('camden-air-quality-history.html', {
+  name: 'Camden historical air-quality monitoring',
+  description: 'A bounded archive of 89,755 historical air-quality observations from four Camden monitoring sites through 16 December 2021.',
+  url: 'https://climate99.com/camden-air-quality-history',
+  dateModified: '2026-09-03',
+  temporalCoverage: '../2021-12-16',
+  spatialCoverage: 'London Borough of Camden',
+  creator: { '@type': 'GovernmentOrganization', name: 'London Borough of Camden' },
+  license: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/',
+  isPartOf: { '@type': 'WebSite', name: 'Climate99', url: 'https://climate99.com/' },
+});
+
 let evidence = fs.readFileSync(path.join(root, 'evidence-coverage.html'), 'utf8');
 evidence = evidence.replace('<strong>7</strong>approved measures', '<strong>8</strong>published measures');
 if (!evidence.includes('Natural Earth')) evidence = evidence.replace('</section><section class="scope-note"><h2>Known limits</h2>', `<article class="source-card"><h2>Natural Earth map reference</h2><p>Generalised country boundaries power the interactive map. They are used for visual navigation only.</p><div class="source-meta"><span>Public domain</span><span>110m scale</span><span>No personal data</span></div><p><a href="https://www.naturalearthdata.com/" rel="nofollow external">Natural Earth</a></p></article></section><section class="scope-note"><h2>Known limits</h2>`);
